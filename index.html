@@ -139,6 +139,23 @@
                         <li class="list-group-item list-group-item-action"><a href="static/resource lists/Whitley County Resource List - Updated 2021-09.pdf" target="_blank" class="button">Whitley County</a></li>                    
                     </ul>
                 </div>
+                <div class="col">
+                    <h3 class="display-6">Local Prevention Dollars</h3>
+                    <ul class="list-group list-group-flush list-group-horizontal">  
+                        <li class="list-group-item list-group-item-action"><a href="static/LPD/LPD 2024-2025 Budget.xlsx" target="_blank" class="button">LPD Budget</a></li>
+                        <li class="list-group-item list-group-item-action">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#region3Modal">
+                                Region 3
+                            </button>
+                        </li>
+                        <li class="list-group-item list-group-item-action">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#region4Modal">
+                                Region 4
+                            </button>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </div>
@@ -297,6 +314,48 @@
       </div>
     </div>
   </div>
+  <!-- LPD R3 Modal -->
+  <div class="modal fade" id="region3Modal" tabindex="-1" aria-labelledby="region3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="region3ModalLabel">Region 3 LPD</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- LPD R3 Text -->
+        <div class="modal-body">
+            <a href="static/LPD/Region 3/Community Education Region 3 SFY 24-25 Regions 3 & 4.docx" target="_blank">Community Education</a> <br>
+            <a href="static/LPD/Region 3/Gear Up Region 3 SFY 24-25.docx" target="_blank">Gear Up</a> <br>
+            <a href="static/LPD/Region 3/Support and Service Region 3 SFY 24-25.docx" target="_blank">Support and Service</a> <br>
+            <a href="static/LPD/Region 3/Youth at Risk Region 3 SFY 24-25 - R3.docx" target="_blank">Youth at Risk</a> <br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- LPD R4 Modal -->
+    <div class="modal fade" id="region4Modal" tabindex="-1" aria-labelledby="region4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="region4ModalLabel">Region 4 LPD</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- LPD R4 Text -->
+            <div class="modal-body">
+                <a href="static/LPD/Region 4/After School Region 4 SFY 24 - 25.docx" target="_blank">After School</a> <br>
+                <a href="static/LPD/Region 4/Community Education Region 4 SFY 24-25.docx" target="_blank">Community Education</a> <br>
+                <a href="static/LPD/Region 4/Gear Up Region 4 SFY 24-25.docx" target="_blank">Gear Up</a> <br>
+                <a href="static/LPD/Region 4/Support and Service DV Region 4 SFY 24-25.docx" target="_blank">Support and Service</a> <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
