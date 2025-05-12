@@ -1,0 +1,103 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Purchase Order #: [ID]</title>
+        <style>
+            h3{
+                text-align: center;
+                font-size: 24px;
+            }
+            th{
+                text-align: start;
+                width: auto;
+                font-size: 20px;
+            }
+            td{
+                text-align: start;
+                width: auto;
+            }
+            table{
+                width: 100%;
+                table-layout: fixed;
+                overflow-wrap: break-word; 
+             
+                padding-right: 5px;
+
+                
+            }
+            body{
+                font-family: calibri;
+                font-size: 14px;
+                height: 11in;
+                width: 8.5in;
+                padding-top: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                
+                box-sizing: border-box;
+                border: 2px solid #000000;
+            }
+            label{
+                font-weight: bold;
+            }
+            input{
+                width: 100%;
+            }
+        </style
+
+    </head>
+    <body>
+        <h3>[AGENCY]</h3>
+        <h3>Purchase Order #: [ID]</h3>
+    <!-- Expense Info -->
+            <div>
+                <table>
+                    <tr>
+                        <th>
+                            Programs:
+                        </th>
+                        <td> /* For Each Loop */
+                            [DEPARTMENTS]
+                        </td>
+                        <th>
+                            Regions:
+                        </th>
+                        <td>
+                            [REGIONS]
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Expense Type:
+                        </th>
+                        <td>
+                            [EXPENSE TYPES]
+                        </td>
+                        <th>
+                            Total: 
+                        </th>
+                        <td>
+                            [TOTAL]
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Allocations</th>
+                        <td colspan="3">
+                                
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">
+                            <input id="note" type="text" value="test">    
+                        </td>
+                    </tr>
+                </table>
+
+
+
+</body>
+</html>

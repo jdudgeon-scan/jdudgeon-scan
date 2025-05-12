@@ -1,0 +1,50 @@
+
+var f = this.getField("FCContract_Client1Signed")
+f.value = util.printd("dd/mm/yyyy HH:MM", new Date());
+
+
+
+
+
+
+var field1 = this.getField("Budget_AdjustedAmount_HousingExpensesTotal").value;
+var field2 = this.getField("Budget_AdjustedAmount_MiscTotal").value;
+var field3 = this.getField("Budget_AdjustedAmount_OtherDebtTotal").value;
+
+
+
+var sum = Number(field1) + Number(field2) + Number(field3);
+
+    
+this.getField("Budget_AdjustedAmount_TotalAfterAllExpenses").value = sum;
+
+
+
+
+
+
+
+(function() {
+    // Array of checkbox field names
+    var checkboxFieldNames = ["Screen_CheckBox_SubstanceAbuse_UsedMore", "Screen_CheckBox_SubstanceAbuse_Neglected", "Screen_CheckBox_SubstanceAbuse_AnyoneObject", "Screen_CheckBox_SubstanceAbuse_CutDown", "Screen_CheckBox_SubstanceAbuse_Preoccupied", "Screen_CheckBox_SubstanceAbuse_RelieveEmotional"];
+    
+
+    var targetField = this.getField("Screen_CheckBox_SubstanceAbuse_Total");
+    
+
+    var result = 0;
+
+    for (var i = 0; i < checkboxFieldNames.length; i++) {
+        // Get the checkbox field
+        var checkbox = this.getField(checkboxFieldNames[i]);
+        
+        // Check if the checkbox is checked
+        if (checkbox.isBoxChecked(0)) {
+            // If checked, add 1 to the result
+            result += 1;
+        }
+    }
+    
+
+    targetField.value = result;
+})();
